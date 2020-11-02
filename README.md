@@ -1,6 +1,6 @@
-# Button press detector
+# Button press detector for ESP8266 SDK
 
-This implements a version of [THE ULTIMATE DEBOUNCER(TM) from hackaday](https://hackaday.com/2015/12/10/embed-with-elliot-debounce-your-noisy-buttons-part-ii/
+This repo is forked from https://github.com/craftmetrics/esp32-button. It implements a version of [THE ULTIMATE DEBOUNCER(TM) from hackaday](https://hackaday.com/2015/12/10/embed-with-elliot-debounce-your-noisy-buttons-part-ii/
 ).
 
 It can monitor multiple pins, and sends button events over a queue for your application to process.
