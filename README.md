@@ -7,7 +7,7 @@ It can monitor multiple pins, and sends button events over a queue for your appl
 
 ## Available input GPIO pins
 
-Only the following pins can be used as inputs on the ESP32:
+Only the following pins can be used as inputs on the ESP8266:
 
 0-19, 21-23, 25-27, 32-39
 
