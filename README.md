@@ -1,4 +1,4 @@
-# Button press detector for ESP8266 SDK
+# Button press detector for ESP8266 RTOS SDK
 
 This repo is forked from https://github.com/craftmetrics/esp32-button. It implements a version of [THE ULTIMATE DEBOUNCER(TM) from hackaday](https://hackaday.com/2015/12/10/embed-with-elliot-debounce-your-noisy-buttons-part-ii/
 ).
