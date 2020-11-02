@@ -55,7 +55,7 @@ static bool button_up(debounce_t *d) {
 #define LONG_PRESS_DURATION (2000)
 
 static uint32_t millis() {
-    return esp_timer_get_time() / 1000;
+    return xTaskGetTickCount() / 1000;
 }
 
 static void send_event(debounce_t db, int ev) {
@@ -113,8 +113,8 @@ QueueHandle_t * pulled_button_init(unsigned long long pin_select, gpio_pull_mode
     // Configure the pins
     gpio_config_t io_conf;
     io_conf.mode = GPIO_MODE_INPUT;
-    io_conf.pull_up_en = (pull_mode == GPIO_PULLUP_ONLY || pull_mode == GPIO_PULLUP_PULLDOWN);
-    io_conf.pull_down_en = (pull_mode == GPIO_PULLDOWN_ONLY || pull_mode == GPIO_PULLUP_PULLDOWN);;
+    io_conf.pull_up_en = 1;
+    io_conf.pull_down_en = (pull_mode == GPIO_PULLDOWN_ONLY);;
     io_conf.pin_bit_mask = pin_select;
     gpio_config(&io_conf);
 
